@@ -1,0 +1,8 @@
+# remove reference id
+
+for f in *.png; do mv "$f" "${f%_*}.png"; done
+
+
+# remove underscore
+
+for file in *; do mv "$file" "$(echo "$file" | tr '-' ' ')" ; done
